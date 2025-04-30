@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/app/(tabs)/_layout.tsx;/Users/ehusain/ehusainApps/DeedChain/app/(tabs)/index.tsx;/Users/ehusain/ehusainApps/DeedChain/assets/good_deeds.json;/Users/ehusain/ehusainApps/DeedChain/components/ui/IconSymbol.ios.tsx;/Users/ehusain/ehusainApps/DeedChain/components/ui/IconSymbol.tsx;/Users/ehusain/ehusainApps/DeedChain/components/ui/TabBarBackground.ios.tsx;/Users/ehusain/ehusainApps/DeedChain/components/ui/TabBarBackground.tsx;/Users/ehusain/ehusainApps/DeedChain/components/ThemeContext.tsx;/Users/ehusain/ehusainApps/DeedChain/constants/Colors.ts;/Users/ehusain/ehusainApps/DeedChain/constants/successMessages.ts;/Users/ehusain/ehusainApps/DeedChain/hooks/useColorScheme.ts;/Users/ehusain/ehusainApps/DeedChain/hooks/useColorScheme.web.ts;/Users/ehusain/ehusainApps/DeedChain/hooks/useThemeColor.ts;/Users/ehusain/ehusainApps/DeedChain/scripts/reset-project.js;/Users/ehusain/ehusainApps/DeedChain/app.json;/Users/ehusain/ehusainApps/DeedChain/package-lock.json;/Users/ehusain/ehusainApps/DeedChain/package.json;/Users/ehusain/ehusainApps/DeedChain/README.md;/Users/ehusain/ehusainApps/DeedChain/tsconfig.json" />
+  </component>
+</project>

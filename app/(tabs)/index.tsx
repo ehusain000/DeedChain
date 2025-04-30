@@ -104,23 +104,21 @@ export default function HomeScreen() {
                 {message ? <Text style={styles.messageText}>{message}</Text> : null}
             </Animated.View>
 
-            <View style={styles.buttonGroup}>
+            <View style={styles.bottomActions}>
                 <TouchableOpacity
-                    accessibilityLabel="Mark deed as completed"
-                    accessibilityHint="Celebrates and loads a new good deed."
-                    style={[styles.buttonPrimary, buttonDisabled && styles.buttonDisabled]}
+                    style={[styles.iconButton, buttonDisabled && styles.buttonDisabled]}
                     onPress={handleDone}
                     disabled={buttonDisabled}
                 >
-                    <Text style={styles.buttonText}>I Did It</Text>
+                    <Text style={styles.iconButtonText}>✅</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonSecondary} onPress={loadRandomDeed}>
-                    <Text style={styles.buttonSecondaryText}>New Deed</Text>
+                <TouchableOpacity style={styles.iconButton} onPress={loadRandomDeed}>
+                    <Text style={styles.iconButtonText}>🔁</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonTertiary} onPress={handleShare}>
-                    <Text style={styles.buttonTertiaryText}>Share</Text>
+                <TouchableOpacity style={styles.iconButton} onPress={handleShare}>
+                    <Text style={styles.iconButtonText}>📤</Text>
                 </TouchableOpacity>
             </View>
 
@@ -141,25 +139,52 @@ const styles = StyleSheet.create({
     },
     card: {
         backgroundColor: '#FFFFFF',
-        padding: 28,
-        borderRadius: 20,
-        shadowColor: '#000000',
-        shadowOpacity: Platform.OS === 'ios' ? 0.07 : 0.1,
-        shadowOffset: { width: 0, height: 8 },
-        shadowRadius: 20,
-        elevation: 8,
+        padding: 25,
+        borderRadius: 25,
+        shadowColor: '#000',
+        shadowOpacity: 0.08,
+        shadowOffset: { width: 0, height: 12 },
+        shadowRadius: 30,
+        elevation: 10,
         width: '100%',
         maxWidth: 500,
-        marginBottom: 30,
+        height: 350,
         justifyContent: 'center',
         alignItems: 'center',
+        marginBottom: 30,
     },
     deedText: {
-        fontSize: 24,
-        fontWeight: '600',
+        fontSize: 28,
+        fontWeight: '500',
         textAlign: 'center',
-        color: '#1C1C1E', // deep graphite Apple color
-        lineHeight: 32,
+        color: '#1C1C1E',
+        lineHeight: 42,
+    },
+    bottomActions: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginTop: 20,
+        width: '100%',
+        maxWidth: 320,
+        alignSelf: 'center',
+    },
+    iconButton: {
+        backgroundColor: '#EFEFF4',
+        padding: 12,
+        borderRadius: 50,
+        width: 60,
+        height: 60,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOpacity: 0.05,
+        shadowOffset: { width: 0, height: 3 },
+        shadowRadius: 8,
+        elevation: 5,
+    },
+    iconButtonText: {
+        fontSize: 26,
     },
     messageBox: {
         backgroundColor: '#E8F5E9',
